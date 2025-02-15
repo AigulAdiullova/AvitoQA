@@ -9,6 +9,7 @@ Medium | Фильтр по бренду "Author" не работает, вело
 Medium | Ошибка при отображение кол-ва автомобилий в "Горные велосипеды бренда Author в Москве 61", по запросу найдено 9 объявлений. | ![image](https://github.com/user-attachments/assets/3ce15b6d-b61f-49f4-8829-5bc44c15a0d2)
 Medium | Число найденных объявлений "9" не совпадает с кол-вом показанных "12". | 
 Medium | Неккоректное отображение кол-ва страниц "100". | ![image_2025-02-16_00-26-06](https://github.com/user-attachments/assets/8d7e136e-33ca-4f70-b51d-a1f5d81b73b2)
+Medium | Расстояня до метро указано в часах, | ![image](https://github.com/user-attachments/assets/4ce1bb77-73e6-4275-b0ac-73867514fbe7)
 Low | Фильтр "Сначала из Москвы" не работает — в результатах поиска Липецк выше Москвы. | ![image_2025-02-16_00-56-34](https://github.com/user-attachments/assets/99004bf6-09cd-4269-87c2-3f770a1bcd0c)
 Low | При переходе по категориям "Главная → Хобби и отдых → Велосипеды → Горные" в шапке раздела отсутствует фильтр "Горные". | ![image_2025-02-16_01-05-49](https://github.com/user-attachments/assets/bd42f144-a1ee-4b4d-9cbc-c8b981c196ca)
 Low | Ошибка в слове "Категории" — кнопка "Все категории". | ![image_2025-02-15_18-25-20](https://github.com/user-attachments/assets/ad87b977-7764-4899-88d9-94e6a467b86f)
