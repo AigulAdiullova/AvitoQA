@@ -47,7 +47,29 @@ Body JSON
 }
 ```
 
-### 3. Сохранение объявлениея
+### 3. Получение статистики по объявлению
+### Шаги выполнения
+1. Отправка запроса `GET` `https://qa-internship.avito.com/api/1/item/:id`
+2. Тестовые данные
+`"id": "0cd4183f-a699-4486-83f8-b513dfde477a"`
+3. Получен статус ответа `200 OK`
+   
+### Результат:
+Получен статус ответа `200 OK`
+
+Body JSON
+```json
+[
+    {
+        "contacts": 3,
+        "likes": 246,
+        "viewCount": 258
+    }
+]
+```
+### 6. Получение всех объявлений по sellerID 
+
+### 4. Сохранение объявлениея
 
 ### Шаги выполнения
 1. Отправка запроса `Post` `https://qa-internship.avito.com/api/1/item?=12343333`
@@ -66,10 +88,10 @@ Body JSON
   }
 }
 ```
-3. Получен статус ответа `404 Not Found`
+3. Получен статус ответа `200 OK`
    
 ### Результат:
-Получен статус ответа `404 Not Found`
+Получен статус ответа `200 OK`
 
 Body JSON
 ```json
@@ -78,7 +100,48 @@ Body JSON
 }
 ```
 
-## 1. Создание объявления (`POST /api/1/item`)
+### 4. Сохранение объявлениея с незаполненными полями
+### Шаги выполнения
+1. Отправка запроса `Post` `https://qa-internship.avito.com/api/1/item`
+2. Тестовые данные
+   
+   Body JSON
+```json
+{
+  "sellerID": "<integer>",
+  "name": "<string>",
+  "price": "<integer>",
+  "statistics":{
+    "contacts":"<integer>",
+    "likes":"<integer>",
+    "viewCount":"<integer>"
+  }
+}
+```
+3. Получен статус ответа `400 Bad Request`
+   
+### Результат:
+Получен статус ответа `400 Bad Request`
+
+Body JSON
+```json
+{
+  "result": {
+    "messages": {
+      "nostrudffb": "<string>",
+      "Ut__": "<string>"
+    },
+    "message": "<string>"
+  },
+  "status": "<string>"
+}
+```
+
+
+
+
+### 6. Получение всех объявлений по sellerID (`POST /api/1/item`)
+
 
 ### 1.1 Позитивные тесты
 
