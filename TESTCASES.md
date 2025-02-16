@@ -35,6 +35,7 @@ Body JSON
    
 ### Результат:
 Получен статус ответа `404 Not Found`
+
 Body JSON
 ```json
 {
@@ -51,6 +52,7 @@ Body JSON
 ### Шаги выполнения
 1. Отправка запроса `Post` `https://qa-internship.avito.com/api/1/item?=12343333`
 2. Тестовые данные
+   
    Body JSON
 ```json
 {
@@ -68,6 +70,13 @@ Body JSON
    
 ### Результат:
 Получен статус ответа `404 Not Found`
+
+Body JSON
+```json
+{
+    "status": "Сохранили объявление - 909b6bbb-2be2-4bae-ab30-d10f1fb73f62"
+}
+```
 
 ## 1. Создание объявления (`POST /api/1/item`)
 
