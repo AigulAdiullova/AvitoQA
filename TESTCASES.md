@@ -67,25 +67,36 @@ Body JSON
     }
 ]
 ```
-### 6. Получение всех объявлений по sellerID 
+### 4. Получение всех объявлений по sellerID 
+### Шаги выполнения
+1. Отправка запроса `GET` `https://qa-internship.avito.com/api/1/:sellerID/item`
+2. Тестовые данные `"sellerID": "1234345231"`
+3. Получен статус ответа `200 OK`
+   
+### Результат:
+Получен статус ответа `200 OK`
 
-### 4. Сохранение объявлениея
+### 5. Создание объявления
 
 ### Шаги выполнения
-1. Отправка запроса `Post` `https://qa-internship.avito.com/api/1/item?=12343333`
+1. Отправка запроса `Post` `https://qa-internship.avito.com/api/1/item?=&sellerId=239049330&id=856601f9-785f-4b5b-8404-515b0f5f3a2f`
 2. Тестовые данные
-   
-   Body JSON
+`"id": "0cd4183f-a699-4486-83f8-b513dfde477b"`
+`"sellerId": "0cd4183f-a699-4486-83f8-b513dfde477b"`
+
+    Body JSON
 ```json
 {
-  "sellerID": 1234345231,
-  "name": "dsds",
-  "price": 1,
-  "statistics":{
-    "contacts":3,
-    "likes":1234,
-    "viewCount":12
-  }
+    "createdAt": "2025-02-18 11:28:35.164375 +0500 +0500",
+    "id": "856601f9-785f-4b5b-8404-515b0f5f3a2f",
+    "name": "Мой товар",
+    "price": 1500,
+    "sellerId": 239049330,
+    "statistics": {
+        "contacts": 5,
+        "likes": 50,
+        "viewCount": 100
+    }
 }
 ```
 3. Получен статус ответа `200 OK`
